@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">ShopEase</div>
+
+        <button id="cartBtn" class="cart-btn">
+            🛒 Cart (<span id="cartCount">0</span>)
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to ShopEase</h1>
+        <p>Simple products. Great prices. Easy shopping.</p>
+    </section>
+
+    <!-- Products -->
+    <main>
+        <section class="products-section">
+            <h2>Our Products</h2>
+
+            <div id="productContainer" class="product-container">
+                <!-- Products will be added dynamically using JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h2>Your Shopping Cart</h2>
+                <button id="closeCartBtn" class="close-btn">&times;</button>
+            </div>
+
+            <div id="cartItems" class="cart-items">
+                <!-- Cart items will be added dynamically -->
+            </div>
+
+            <div class="cart-summary">
+                <h3>Total: $<span id="cartTotal">0.00</span></h3>
+
+                <button id="checkoutBtn" class="checkout-btn">
+                    Proceed to Checkout
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkoutModal" class="modal">
+        <div class="modal-content checkout-content">
+
+            <button id="closeCheckoutBtn" class="close-btn">
+                &times;
+            </button>
+
+            <h2>Order Preview</h2>
+
+            <div id="checkoutSummary">
+                <!-- Checkout details dynamically added -->
+            </div>
+
+            <button id="confirmOrderBtn" class="confirm-btn">
+                Confirm Order
+            </button>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 ShopEase | Mini E-Commerce App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
