@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Interactive To-Do List with LocalStorage"
+    >
+
+    <title>Interactive To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="todo-container">
+
+        <section class="todo-app">
+
+            <h1>My To-Do List</h1>
+
+            <p class="subtitle">
+                Organize your tasks and stay productive.
+            </p>
+
+
+            <!-- Add Task -->
+
+            <div class="input-section">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter a task..."
+                    autocomplete="off"
+                >
+
+                <button id="addTaskBtn">
+                    Add Task
+                </button>
+
+            </div>
+
+
+            <!-- Task List -->
+
+            <ul id="taskList"></ul>
+
+
+            <!-- Task Summary -->
+
+            <div class="task-summary">
+
+                <span>
+                    Total Tasks:
+                    <strong id="taskCount">0</strong>
+                </span>
+
+                <button id="clearAllBtn">
+                    Clear All
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================= BODY ================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.todo-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/* ================= TODO APP ================= */
+
+.todo-app {
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ================= HEADING ================= */
+
+.todo-app h1 {
+    text-align: center;
+
+    margin-bottom: 8px;
+
+    font-size: 35px;
+}
+
+.subtitle {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+/* ================= INPUT ================= */
+
+.input-section {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+#taskInput {
+    flex: 1;
+
+    padding: 13px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+#taskInput:focus {
+    border-color: #667eea;
+}
+
+
+/* ================= BUTTON ================= */
+
+button {
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+
+    transform: translateY(-1px);
+}
+
+
+/* Add button */
+
+#addTaskBtn {
+    padding: 13px 20px;
+
+    background-color: #667eea;
+
+    color: white;
+}
+
+
+/* ================= TASK LIST ================= */
+
+#taskList {
+    list-style: none;
+
+    margin-bottom: 20px;
+}
+
+
+/* ================= TASK ITEM ================= */
+
+.task-item {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+
+    background-color: #f5f6fa;
+
+    border-radius: 8px;
+
+    border-left: 4px solid #667eea;
+}
+
+
+/* Task text */
+
+.task-text {
+    flex: 1;
+
+    font-size: 16px;
+
+    word-break: break-word;
+}
+
+
+/* Completed task */
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+
+    color: #999;
+}
+
+
+/* ================= ACTION BUTTONS ================= */
+
+.task-actions {
+    display: flex;
+
+    gap: 7px;
+}
+
+.complete-btn {
+    background-color: #28a745;
+
+    color: white;
+
+    padding: 7px 10px;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+
+    color: white;
+
+    padding: 7px 10px;
+}
+
+
+/* ================= EMPTY MESSAGE ================= */
+
+.empty-message {
+    text-align: center;
+
+    color: #888;
+
+    padding: 20px;
+}
+
+
+/* ================= SUMMARY ================= */
+
+.task-summary {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #ddd;
+
+    color: #555;
+}
+
+#clearAllBtn {
+    padding: 8px 14px;
+
+    background-color: #333;
+
+    color: white;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .todo-app {
+        padding: 25px 18px;
+    }
+
+    .todo-app h1 {
+        font-size: 28px;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    #addTaskBtn {
+        width: 100%;
+    }
+
+    .task-item {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .task-actions {
+        width: 100%;
+    }
+
+    .complete-btn,
+    .delete-btn {
+        flex: 1;
+    }
+
+    .task-summary {
+        gap: 10px;
+
+        flex-direction: column;
+    }
+
+    #clearAllBtn {
+        width: 100%;
+    }
+}
