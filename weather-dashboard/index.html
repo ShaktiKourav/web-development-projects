@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Live Weather Dashboard using Fetch API"
+    >
+
+    <title>Live Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="weather-container">
+
+        <!-- Header -->
+
+        <section class="header">
+
+            <p class="small-heading">
+                WEATHER DASHBOARD
+            </p>
+
+            <h1>
+                Live Weather
+            </h1>
+
+            <p>
+                Search any city to view current weather
+                and a 5-day forecast.
+            </p>
+
+        </section>
+
+
+        <!-- Search -->
+
+        <section class="search-section">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name..."
+                autocomplete="off"
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </section>
+
+
+        <!-- Error -->
+
+        <p id="errorMessage" class="error-message"></p>
+
+
+        <!-- Loading -->
+
+        <p id="loadingMessage" class="loading">
+            Loading weather...
+        </p>
+
+
+        <!-- Current Weather -->
+
+        <section
+            id="currentWeather"
+            class="current-weather"
+        >
+
+            <div class="location">
+
+                <h2 id="cityName">
+                    --
+                </h2>
+
+                <p id="countryName">
+                    --
+                </p>
+
+            </div>
+
+
+            <div class="current-info">
+
+                <div class="weather-icon" id="weatherIcon">
+                    ☀️
+                </div>
+
+                <div>
+
+                    <p
+                        id="temperature"
+                        class="temperature"
+                    >
+                        --°C
+                    </p>
+
+                    <p id="weatherDescription">
+                        --
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="weather-details">
+
+                <div class="detail-card">
+
+                    <span>
+                        💧
+                    </span>
+
+                    <p>
+                        Humidity
+                    </p>
+
+                    <strong id="humidity">
+                        --%
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-card">
+
+                    <span>
+                        💨
+                    </span>
+
+                    <p>
+                        Wind
+                    </p>
+
+                    <strong id="windSpeed">
+                        -- km/h
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-card">
+
+                    <span>
+                        🌡️
+                    </span>
+
+                    <p>
+                        Feels Like
+                    </p>
+
+                    <strong id="feelsLike">
+                        --°C
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Forecast -->
+
+        <section class="forecast-section">
+
+            <h2>
+                5-Day Forecast
+            </h2>
+
+            <div
+                id="forecastContainer"
+                class="forecast-container"
+            >
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
