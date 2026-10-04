@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Responsive SaaS Product Pricing Cards"
+    >
+
+    <title>Pricing Plans</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="pricing-container">
+
+        <!-- ================= HEADER ================= -->
+
+        <section class="pricing-header">
+
+            <p class="small-heading">
+                SIMPLE & TRANSPARENT
+            </p>
+
+            <h1>
+                Choose Your Plan
+            </h1>
+
+            <p class="description">
+                Flexible pricing plans designed for individuals
+                and growing teams.
+            </p>
+
+
+            <!-- ================= BILLING TOGGLE ================= -->
+
+            <div class="billing-toggle">
+
+                <span id="monthlyLabel" class="active-label">
+                    Monthly
+                </span>
+
+                <label class="switch">
+
+                    <input
+                        type="checkbox"
+                        id="billingToggle"
+                    >
+
+                    <span class="slider"></span>
+
+                </label>
+
+                <span id="yearlyLabel">
+                    Yearly
+                </span>
+
+                <span class="save-badge">
+                    Save 20%
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRICING CARDS ================= -->
+
+        <section class="pricing-grid">
+
+
+            <!-- ================= BASIC ================= -->
+
+            <article class="pricing-card">
+
+                <h2>
+                    Basic
+                </h2>
+
+                <p class="plan-description">
+                    Perfect for individuals getting started.
+                </p>
+
+                <div class="price">
+
+                    <span class="currency">
+                        $
+                    </span>
+
+                    <span
+                        class="price-value"
+                        data-monthly="9"
+                        data-yearly="7"
+                    >
+                        9
+                    </span>
+
+                    <span class="period">
+                        /month
+                    </span>
+
+                </div>
+
+                <button class="choose-btn">
+                    Get Started
+                </button>
+
+
+                <ul class="features">
+
+                    <li>✓ 5 Projects</li>
+
+                    <li>✓ 10 GB Storage</li>
+
+                    <li>✓ Basic Analytics</li>
+
+                    <li>✓ Email Support</li>
+
+                </ul>
+
+            </article>
+
+
+            <!-- ================= PRO ================= -->
+
+            <article class="pricing-card popular">
+
+                <div class="ribbon">
+                    Popular
+                </div>
+
+                <h2>
+                    Pro
+                </h2>
+
+                <p class="plan-description">
+                    Great for professionals and small teams.
+                </p>
+
+                <div class="price">
+
+                    <span class="currency">
+                        $
+                    </span>
+
+                    <span
+                        class="price-value"
+                        data-monthly="19"
+                        data-yearly="15"
+                    >
+                        19
+                    </span>
+
+                    <span class="period">
+                        /month
+                    </span>
+
+                </div>
+
+                <button class="choose-btn primary">
+                    Choose Pro
+                </button>
+
+
+                <ul class="features">
+
+                    <li>✓ Unlimited Projects</li>
+
+                    <li>✓ 50 GB Storage</li>
+
+                    <li>✓ Advanced Analytics</li>
+
+                    <li>✓ Priority Support</li>
+
+                    <li>✓ Team Collaboration</li>
+
+                </ul>
+
+            </article>
+
+
+            <!-- ================= BUSINESS ================= -->
+
+            <article class="pricing-card best-value">
+
+                <div class="ribbon">
+                    Best Value
+                </div>
+
+                <h2>
+                    Business
+                </h2>
+
+                <p class="plan-description">
+                    Advanced tools for growing businesses.
+                </p>
+
+                <div class="price">
+
+                    <span class="currency">
+                        $
+                    </span>
+
+                    <span
+                        class="price-value"
+                        data-monthly="39"
+                        data-yearly="31"
+                    >
+                        39
+                    </span>
+
+                    <span class="period">
+                        /month
+                    </span>
+
+                </div>
+
+                <button class="choose-btn">
+                    Choose Business
+                </button>
+
+
+                <ul class="features">
+
+                    <li>✓ Unlimited Projects</li>
+
+                    <li>✓ 200 GB Storage</li>
+
+                    <li>✓ Premium Analytics</li>
+
+                    <li>✓ 24/7 Support</li>
+
+                    <li>✓ Advanced Team Tools</li>
+
+                </ul>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

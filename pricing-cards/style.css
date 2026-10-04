@@ -1,0 +1,381 @@
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================= BODY ================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    background: #f5f7fb;
+
+    color: #1f2937;
+}
+
+
+/* ================= MAIN CONTAINER ================= */
+
+.pricing-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 70px 20px;
+}
+
+
+/* ================= HEADER ================= */
+
+.pricing-header {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.small-heading {
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.pricing-header h1 {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #6b7280;
+
+    font-size: 17px;
+
+    max-width: 600px;
+
+    margin: auto;
+}
+
+
+/* ================= BILLING TOGGLE ================= */
+
+.billing-toggle {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+.billing-toggle span {
+    font-weight: 600;
+}
+
+.active-label {
+    color: #4f46e5;
+}
+
+
+/* Toggle switch */
+
+.switch {
+    position: relative;
+
+    display: inline-block;
+
+    width: 55px;
+
+    height: 30px;
+}
+
+.switch input {
+    opacity: 0;
+
+    width: 0;
+
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+
+    inset: 0;
+
+    cursor: pointer;
+
+    background: #4f46e5;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+.slider::before {
+    content: "";
+
+    position: absolute;
+
+    height: 22px;
+
+    width: 22px;
+
+    left: 4px;
+
+    top: 4px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    transition: 0.3s;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(25px);
+}
+
+
+/* Save badge */
+
+.save-badge {
+    background: #dcfce7;
+
+    color: #166534;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+}
+
+
+/* ================= PRICING GRID ================= */
+
+.pricing-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+
+/* ================= CARD ================= */
+
+.pricing-card {
+    position: relative;
+
+    background: white;
+
+    padding: 35px 30px;
+
+    border-radius: 15px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Hover effect */
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Popular card */
+
+.pricing-card.popular {
+    border: 2px solid #4f46e5;
+}
+
+
+/* ================= RIBBON ================= */
+
+.ribbon {
+    position: absolute;
+
+    top: 18px;
+
+    right: -8px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    padding: 7px 14px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    border-radius: 4px;
+}
+
+
+/* ================= CARD CONTENT ================= */
+
+.pricing-card h2 {
+    font-size: 26px;
+
+    margin-bottom: 12px;
+}
+
+.plan-description {
+    color: #6b7280;
+
+    min-height: 48px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ================= PRICE ================= */
+
+.price {
+    display: flex;
+
+    align-items: baseline;
+
+    margin-bottom: 25px;
+}
+
+.currency {
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+.price-value {
+    font-size: 48px;
+
+    font-weight: bold;
+}
+
+.period {
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.choose-btn {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 2px solid #4f46e5;
+
+    background: white;
+
+    color: #4f46e5;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.choose-btn:hover {
+    background: #4f46e5;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+.choose-btn.primary {
+    background: #4f46e5;
+
+    color: white;
+}
+
+
+/* ================= FEATURES ================= */
+
+.features {
+    list-style: none;
+
+    margin-top: 30px;
+}
+
+.features li {
+    padding: 10px 0;
+
+    color: #4b5563;
+
+    border-bottom: 1px solid #f0f0f0;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .pricing-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .pricing-container {
+        padding: 50px 15px;
+    }
+
+    .pricing-header h1 {
+        font-size: 32px;
+    }
+
+    .billing-toggle {
+        flex-wrap: wrap;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card {
+        padding: 30px 25px;
+    }
+
+}
